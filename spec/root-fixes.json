@@ -1,0 +1,7 @@
+{
+  "schemes": [
+    "https"
+  ],
+  "host": "stage.paragonsolutions.com",
+  "basePath": "/api/v2"
+}

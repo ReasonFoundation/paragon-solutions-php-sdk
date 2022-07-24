@@ -1,0 +1,46 @@
+# # TicketModel
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**result** | **string** | Method result code | [optional]
+**result_message** | **string** | Method result message | [optional]
+**result_details** | **string** | Method result details | [optional]
+**ticket_id** | **string** | Unique terminal identifier for this merchant. | [optional]
+**ticket_status** | **string** | Unique terminal identifier for this merchant. | [optional]
+**terminal_id** | **string** | Unique terminal identifier for this merchant. | [optional]
+**transaction_type** | **string** | The type of transaction you wish to create. Valid values are Auth, Sale, Force, RepeatSale, Return, Reversal, Void, Capture and CaptureAll  This field is Mandatory | [optional]
+**clerk_id** | **string** |  | [optional]
+**transaction_id** | **string** | Numeric value assigned by Merchant to identify a transaction (for use as alternative to Paragon platform-assigned PNRef). | [optional]
+**invoice_number** | **string** | Identifier assigned by the merchant to locate a specific transaction or multiple transactions (grouped by a single invoice). | [optional]
+**customer_key** | **string** | Unique identifier of a customer, assigned by Paragon platform.  Required for TransType &#x3D; Tokenize.  Optional for TransType &#x3D; Auth; Sale. | [optional]
+**auth_amount** | **string** | $0.00 Amount $1,000,000.00 (DDDDDD.CC).  Required for TransType &#x3D; Auth; Sale; RepeatSale; Force; Return; Reversal;  Optional for TransType &#x3D; Void; Capture; CaptureAll. | [optional]
+**tip_amount** | **string** | Fee (included in Amount) specified by consumer as gratuity for service performed (DDDDD.CC). | [optional]
+**sales_tax_amount** | **string** | Fee (added to Amount) to cover cost of sales tax (DDDDD.CC). | [optional]
+**purchase_order_number** | **string** | Required for Level 2 Transactions.  Optional for all others. | [optional]
+**prompt_for_tip** | **string** | Should Terminal Prompt for Tip Entry (True/False) | [optional]
+**override_duplicates** | **string** | Override Duplicate checking (True/False) | [optional]
+**commercial_card_mode** | **string** |  | [optional]
+**commercial_card_status** | **string** |  | [optional]
+**level3_data** | [**\DCarbone\ParagonSolutionsPHPSDK\Model\Level3DetailsModel**](Level3DetailsModel.md) |  | [optional]
+**payment_reference_number** | **string** | Unique identifier of the transaction, assigned by Paragon platform. | [optional]
+**original_payment_reference_number** | **string** | Unique identifier of a transaction, assigned by Paragon platform.  Required for TransType &#x3D; Force; Return; Reversal; Void; Capture;  Optional for TransType &#x3D; Auth; Sale; RepeatSale; CaptureAll. | [optional]
+**name_on_card** | **string** | Cardholder Name | [optional]
+**card_brand** | **string** | Card Brand (Visa, Mastercard, American Express, Discover, etc.) | [optional]
+**card_last_4** | **string** | Last 4 Digits of the Card Number used | [optional]
+**card_key** | **string** |  | [optional]
+**original_total_amount** | **string** | Original Auth Amount (from original PNREF) | [optional]
+**terminal_auth_amount** | **string** | Final amount terminal sent to the gateway | [optional]
+**terminal_tip_amount** | **string** | Final tip amount terminal sent to the gateway | [optional]
+**terminal_tax_amount** | **string** | Final tax amount terminal sent to the gateway | [optional]
+**terminal_cashback_amount** | **string** | Final cash back amount sent to the gateway | [optional]
+**ticket_amount_changed** | **string** | Flag indicating if Ticket Amount changed from original (True/False) | [optional]
+**ticket_result** | **string** | Code returned from Paragon platform describing result from processing transaction | [optional]
+**ticket_sub_result** | **string** | Code returned from Paragon platform describing sub result from processing transaction | [optional]
+**ticket_result_message** | **string** | Message returned from Paragon platform describing result from processing transaction | [optional]
+**ticket_result_description** | **string** | Description returned from Paragon platform describing result from processing transaction | [optional]
+**ticket_approval_code** | **string** | Code returned from Paragon platform describing approval code from approved transaction | [optional]
+**ticket_create_date** | **string** | Date the Ticket was created | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

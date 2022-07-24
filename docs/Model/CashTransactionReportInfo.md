@@ -1,0 +1,44 @@
+# # CashTransactionReportInfo
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**payment_reference_number** | **string** | Unique identifier of a transaction, assigned by Paragon platform.   Required for TransType &#x3D; Force; Return; Reversal; Void; Capture;  Optional for TransType &#x3D; Auth; Sale; RepeatSale; CaptureAll. | [optional]
+**reseller_key** | **string** | Unique identifier for Paragon platform reseller. | [optional]
+**transaction_settle_key** | **string** |  | [optional]
+**total_number** | **string** |  | [optional]
+**ip** | **string** |  | [optional]
+**date** | **string** | Date and time on which transaction processed by Paragon platform | [optional]
+**merchant_key** | **string** | User name assigned in Paragon platform. The account must be granted a sufficient level of security access in order to invoke the operation. | [optional]
+**username** | **string** | Paragon platform User Name used when transaction processed. | [optional]
+**payment_type** | **string** | Payment type of cards | [optional]
+**transaction_type** | **string** | Transaction Type(s) to include from list of settled transactions(commaseparated list of single-quoted strings).  Valid values are Auth, Sale, Force, RepeatSale, Return, Reversal, Void, Capture and CaptureAll  This field is Mandatory | [optional]
+**processor_id** | **string** | Identifier used by Paragon platform to reference payment processor. | [optional]
+**reversal_flag** | **string** | Reversal transaction indicator. Value of 1 means it is while 0 means it is not. | [optional]
+**void_flag** | **string** | Void transaction indicator. | [optional]
+**settle_flag** | **string** | Include settled (1) or unsettled (0)transactions in list of transactions. | [optional]
+**entry_mode** | **string** | Indicate how merchant obtained values from credit card | [optional]
+**total_amount** | **string** | Total amount for a processed transaction. | [optional]
+**customer_id** | **string** | Identifier for a customer assigned by Merchant. | [optional]
+**original_payment_reference_number** | **string** | Identifier of original transaction (with which transaction is associated). | [optional]
+**authorized_date** | **string** | Date of Authorization | [optional]
+**batch_id** | **string** | Batch number for the transaction created by the gateway. | [optional]
+**batch_number** | **string** | Batch number for  the transaction (returned by the payment processor). | [optional]
+**batch_sequence_number** | **string** | A sequential batch number created by the gateway for the transaction. | [optional]
+**authorization_total_amount** | **string** | Total Authorization amount | [optional]
+**capture_total_amount** | **string** | Total Capture amount | [optional]
+**force_capture_total_amount** | **string** | Total Force Capture amount | [optional]
+**post_authorization_total_amount** | **string** | Total Post Authorization amount | [optional]
+**refund_total_amount** | **string** | Total refund amount | [optional]
+**sale_total_amount** | **string** | Total sale amount | [optional]
+**repeat_sale_total_amount** | **string** | Total Repeat sale amount | [optional]
+**authorization_count** | **string** | Count of Authorized Transactions | [optional]
+**capture_count** | **string** | Count of Captured Transactions | [optional]
+**force_capture_count** | **string** | Count of Force Capture Transactions | [optional]
+**post_authorization_count** | **string** | Count of Post Authorized Transactions | [optional]
+**refund_count** | **string** | Count of Refunded Transactions | [optional]
+**sale_count** | **string** | Count of Sale Transactions | [optional]
+**repeat_sale_count** | **string** | Count of Repeat Transactions | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

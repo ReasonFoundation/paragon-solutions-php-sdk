@@ -1,0 +1,25 @@
+# to have a look at what options are possible in this file, look at the class var names here:
+# https://github.com/OpenAPITools/openapi-generator/blob/master/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java#L148
+#
+# with a few exceptions, they're camelCased versions of the full flag name, e.g. --git-host == gitHost
+
+
+# general package config
+gitHost: github.com
+gitUserId: dcarbone
+gitRepoId: paragon-solutions-php-sdk
+packageName: paragon-solutions-php-sdk
+enableMinimalUpdate: true
+templateDir: templates
+
+# generator-specific config
+generatorName: php
+artifactVersion: "dev-v1.0.0"
+disallowAdditionalPropertiesIfNotPresent: false
+ensureUniqueParams: true
+invokerPackage: "DCarbone\\ParagonSolutionsPHPSDK"
+legacyDiscriminatorBehavior: false
+variableNamingConvention: snake_case
+
+## TODO: add version to this...
+httpUserAgent: "ParagonSolutionsPHPSDK"
