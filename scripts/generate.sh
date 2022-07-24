@@ -55,10 +55,7 @@ generate_client() {
 }
 
 final_steps() {
-#  go mod tidy -compat=1.17
-#  go mod vendor
-#  go fmt .
-#  go vet .
+  composer update
   git add --update
   git add '*.php'
   git add 'docs/*.md'
