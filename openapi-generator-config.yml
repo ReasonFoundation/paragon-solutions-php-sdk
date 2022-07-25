@@ -14,7 +14,7 @@ templateDir: templates
 
 # generator-specific config
 generatorName: php
-artifactVersion: "dev-v1.0.0"
+artifactVersion: "v1.0.0"
 disallowAdditionalPropertiesIfNotPresent: false
 ensureUniqueParams: true
 invokerPackage: "DCarbone\\ParagonSolutionsPHPSDK"
