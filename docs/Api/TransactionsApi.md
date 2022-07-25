@@ -1,6 +1,6 @@
 # DCarbone\ParagonSolutionsPHPSDK\TransactionsApi
 
-All URIs are relative to https://stage.paragonsolutions.com/api/v2.
+All URIs are relative to https://stage.paragonsolutions.com/api.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
